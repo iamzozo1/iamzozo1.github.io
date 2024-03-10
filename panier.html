@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Taker Doudou</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta name="keywords" content="e-commerce taker mug">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="container">
+        <a href="index.html"><img src="assets/logos/mug-shop-logo.png" alt="company logo" class="inline"></a>
+        <div class="nav-right inline">
+            <a class="inline" href="index.html" id="acceuil">Acceuil</a>
+            <a id="shopping-bag" class="inline" href="panier.html"><img src="assets/logos/shopping-bag.png" alt="shopping-bag"></a>
+        </div>
+    </nav>
+    <div class="panier-container">
+        <div id="empty-cart">
+            <img src="assets/logos/sad.png" alt="sad emoji">
+            <h2>Aucun élément dans votre panier</h2>
+        </div>
+        <div class="article-side" id="article-side">
+        </div>
+        <div class="buy-container" id="buy-wrapper">
+            <img src="assets/logos/mug-shop-logo.png" alt="mug-shop-logo" id="mug-shop-logo-cart">
+            <h3>Total <span id="command-cost">0</span>€</h3>
+            <button onclick="show_element('contactForm')">Payer</button>
+        </div>
+        <form id="contactForm" class="data-form">
+            <img src="assets/logos/mug-shop-logo.png" alt="mug shop logo">
+            <h2>Formulaire de contact</h2>
+            <h4>Veuillez remplir vos coordonnées</h4>
+            <div>
+              <label for="firstName">Prénom:</label><br>
+              <input type="text" id="firstName" name="firstName" required><br>
+            </div>
+            <div>
+              <label for="lastName">Nom:</label><br>
+              <input type="text" id="lastName" name="lastName" required><br>
+            </div>
+            <div>
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" required><br>
+            </div>
+            <div>
+              <label for="address">Adresse:</label><br>
+              <input type="text" id="address" name="address" required><br>
+            </div>
+            <div>
+              <input type="submit" value="Envoyer" id="submit_button">
+            </div>
+        </form>
+    </div>
+    <footer id="cart-footer">
+        <p>Je crois c'est le footer ici</p>
+    </footer>
+</body>
