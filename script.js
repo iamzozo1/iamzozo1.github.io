@@ -116,7 +116,7 @@ function is_good_page(page) {
 function createCartArticleHTML(article) {
     return `
         <div class="panier-item" id="article-${article.item._id}">
-            <img src="http://152.228.172.51:5000/static/img/${article.item.image}.png" alt="${article.item.name}"/>
+            <img src="https://152.228.172.51:5000/static/img/${article.item.image}.png" alt="${article.item.name}"/>
             <div>
                 <p class="cart-item-title">${article.item.name}</p>
                 <p>Quantité: <span id="article-count">${article.amount}</span></p>
@@ -169,7 +169,7 @@ function display_good_ids() {
 
 //interactc with the API
 function create_command(orderDetails) {
-    const url = 'http://152.228.172.51:5000';
+    const url = 'https://152.228.172.51:5000';
     let command_id;
 
     axios.post(url, orderDetails)
@@ -216,7 +216,7 @@ function setupFormEventListener() {
 
 async function getPictureUrl(itemId) {
     
-    return `http://152.228.172.51:5000/static/img/${itemId}.png`;
+    return `https://152.228.172.51:5000/static/img/${itemId}.png`;
 }
 
 //get all the articles with the API
@@ -224,7 +224,7 @@ async function getArticles() {
     let response;
 
     try {
-        response = await axios.get('http://152.228.172.51:5000/item/');
+        response = await axios.get('https://152.228.172.51:5000/item/');
         return response.data;
     } catch (error) {
         console.error('Error fetching articles:', error);
@@ -234,7 +234,7 @@ async function getArticles() {
 function createArticleHTML(article) {
     return `
     <a href="article.html" class="item" id="article-${article._id}">
-        <img src="http://152.228.172.51:5000/static/img/${article.image}.png" alt="${article.name}" id="image-${article._id}"/>
+        <img src="https://152.228.172.51:5000/static/img/${article.image}.png" alt="${article.name}" id="image-${article._id}"/>
         <div class="info">
             <h3>${article.name}</h3>
             <p>${article.price}€</p>
@@ -283,7 +283,7 @@ function displayArticleInfo() {
         titleElement.textContent = lastArticle.name;
 
         pictureElement = document.getElementById('item-page-picture');
-        pictureElement.src = "http://152.228.172.51:5000/static/img/" + lastArticle.image + ".png";
+        pictureElement.src = "https://152.228.172.51:5000/static/img/" + lastArticle.image + ".png";
 
         priceElement = document.getElementById('item-page-price');
         priceElement.textContent = lastArticle.price + '€';
