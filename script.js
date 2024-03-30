@@ -51,6 +51,12 @@ function remove_one(element_id) {
     for (let i = 0; i < panier.length; i++) {
         if (panier[i].item._id == element_id) {
             panier[i].amount -= 1;
+            if (panier[i].amount <= 0) {
+                if (panier.length == 1)
+                    panier = null;
+                else
+                    panier.splice(i, i);
+            }
             localStorage.setItem('panier', JSON.stringify(panier));
             display_good_ids();
             return true;
@@ -61,7 +67,7 @@ function remove_one(element_id) {
 
 //clear the local storage
 function empty_cart()
-{
+{ 
     localStorage.clear();
     return true;
 }
