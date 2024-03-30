@@ -190,6 +190,7 @@ function create_command(orderDetails) {
             } else {
                 console.error('Error creating order:', error.message);
             }
+            hide_element("contactForm");
         });
 }
 
