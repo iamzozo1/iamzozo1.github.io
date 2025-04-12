@@ -1,0 +1,6 @@
+<map id="arcade::IGameModule" name="arcade::IGameModule">
+<area shape="rect" id="node1" title=" " alt="" coords="141,5,292,31"/>
+<area shape="rect" id="node2" href="$classMenu_1_1Menu.html" title=" " alt="" coords="5,79,100,104"/>
+<area shape="rect" id="node3" href="$classminesweeper_1_1Minesweeper.html" title=" " alt="" coords="125,79,309,104"/>
+<area shape="rect" id="node4" href="$classnibbler_1_1Nibbler.html" title=" " alt="" coords="333,79,442,104"/>
+</map>

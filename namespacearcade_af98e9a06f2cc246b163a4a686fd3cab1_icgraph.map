@@ -1,0 +1,8 @@
+<map id="arcade::initEntity" name="arcade::initEntity">
+<area shape="rect" id="node1" title=" " alt="" coords="424,106,544,131"/>
+<area shape="rect" id="node2" href="$classnibbler_1_1Maze.html#a684c58d04a8b19064689caf31c6a28ce" title=" " alt="" coords="195,5,374,45"/>
+<area shape="rect" id="node3" href="$classnibbler_1_1Maze.html#a1d9447d979922e20bff4af5f2e7c10b8" title=" " alt="" coords="199,69,371,109"/>
+<area shape="rect" id="node5" href="$classnibbler_1_1Snake.html#a7f96bf193de065de9da4b5932a0fdf20" title=" " alt="" coords="193,134,376,159"/>
+<area shape="rect" id="node6" href="$classnibbler_1_1Nibbler.html#a5455b4867ea0ceaa8d0e18257e264a23" title=" " alt="" coords="205,183,364,209"/>
+<area shape="rect" id="node4" href="$classnibbler_1_1Maze.html#a6f53d921e08058ece9263e15c653ec36" title=" " alt="" coords="5,77,145,102"/>
+</map>

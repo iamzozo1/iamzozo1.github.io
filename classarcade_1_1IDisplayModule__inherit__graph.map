@@ -1,0 +1,6 @@
+<map id="arcade::IDisplayModule" name="arcade::IDisplayModule">
+<area shape="rect" id="node1" title=" " alt="" coords="134,5,293,31"/>
+<area shape="rect" id="node2" href="$classncurses_1_1Ncurses.html" title=" " alt="" coords="5,79,131,104"/>
+<area shape="rect" id="node3" href="$classopengl_1_1OpenGL.html" title=" " alt="" coords="155,79,271,104"/>
+<area shape="rect" id="node4" href="$classsdl_1_1SDL2.html" title=" " alt="" coords="296,79,376,104"/>
+</map>
